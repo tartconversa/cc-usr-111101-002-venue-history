@@ -1,0 +1,3 @@
+{"assertion_id": "a1", "venue_key": "v1", "revision": 1, "received_at": "2026-09-01T00:00:00+08:00", "valid_from": "2026-09-01T00:00:00+08:00", "valid_to": null, "zone_type": "reading", "store_key": "s1", "operation": "ASSERT"}
+{"assertion_id": "a2", "venue_key": "v1", "revision": 2, "received_at": "2026-10-05T00:00:00+08:00", "valid_from": "2026-09-20T00:00:00+08:00", "valid_to": null, "zone_type": "dining", "store_key": "s2", "operation": "ASSERT"}
+{"assertion_id": "a2", "venue_key": "v1", "revision": 3, "received_at": "2026-10-10T00:00:00+08:00", "operation": "RETRACT"}
