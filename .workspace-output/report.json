@@ -1,0 +1,218 @@
+{
+  "fact_count": 6,
+  "known_batches": [
+    "2026-08-31T16:00:00+00:00",
+    "2026-10-04T16:00:00+00:00",
+    "2026-10-09T16:00:00+00:00"
+  ],
+  "queries": [
+    {
+      "query": "effective_at@2026-09-25T10:00:00+08:00@2026-10-01T00:00:00+08:00",
+      "results": [
+        {
+          "known_at": "2026-08-31T16:00:00+00:00",
+          "query": "effective_at",
+          "query_time": "2026-09-25T02:00:00+00:00",
+          "source_assertion_id": "a1",
+          "source_revision": 1,
+          "store_key": "s1",
+          "surrogate_key": "v1|2026-08-31T16:00:00+00:00|reading|s1",
+          "valid_from": "2026-08-31T16:00:00+00:00",
+          "valid_to": "",
+          "venue_key": "v1",
+          "zone_type": "reading"
+        }
+      ]
+    },
+    {
+      "query": "effective_at@2026-09-25T10:00:00+08:00@2026-10-06T00:00:00+08:00",
+      "results": [
+        {
+          "known_at": "2026-10-04T16:00:00+00:00",
+          "query": "effective_at",
+          "query_time": "2026-09-25T02:00:00+00:00",
+          "source_assertion_id": "a2",
+          "source_revision": 2,
+          "store_key": "s2",
+          "surrogate_key": "v1|2026-09-19T16:00:00+00:00|dining|s2",
+          "valid_from": "2026-09-19T16:00:00+00:00",
+          "valid_to": "",
+          "venue_key": "v1",
+          "zone_type": "dining"
+        }
+      ]
+    },
+    {
+      "query": "timeline@2026-09-25T10:00:00+08:00",
+      "results": [
+        {
+          "known_at": "2026-08-31T16:00:00+00:00",
+          "point_in_time": "2026-08-31T16:00:00+00:00",
+          "query": "timeline",
+          "query_time": "2026-09-25T02:00:00+00:00",
+          "source_assertion_id": "a1",
+          "source_revision": 1,
+          "store_key": "s1",
+          "surrogate_key": "v1|2026-08-31T16:00:00+00:00|reading|s1",
+          "valid_from": "2026-08-31T16:00:00+00:00",
+          "valid_to": "",
+          "venue_key": "v1",
+          "zone_type": "reading"
+        },
+        {
+          "known_at": "2026-10-04T16:00:00+00:00",
+          "point_in_time": "2026-10-04T16:00:00+00:00",
+          "query": "timeline",
+          "query_time": "2026-09-25T02:00:00+00:00",
+          "source_assertion_id": "a2",
+          "source_revision": 2,
+          "store_key": "s2",
+          "surrogate_key": "v1|2026-09-19T16:00:00+00:00|dining|s2",
+          "valid_from": "2026-09-19T16:00:00+00:00",
+          "valid_to": "",
+          "venue_key": "v1",
+          "zone_type": "dining"
+        },
+        {
+          "known_at": "2026-10-09T16:00:00+00:00",
+          "point_in_time": "2026-10-09T16:00:00+00:00",
+          "query": "timeline",
+          "query_time": "2026-09-25T02:00:00+00:00",
+          "source_assertion_id": "a1",
+          "source_revision": 1,
+          "store_key": "s1",
+          "surrogate_key": "v1|2026-08-31T16:00:00+00:00|reading|s1",
+          "valid_from": "2026-08-31T16:00:00+00:00",
+          "valid_to": "",
+          "venue_key": "v1",
+          "zone_type": "reading"
+        }
+      ]
+    }
+  ],
+  "remaps": [
+    {
+      "amount_fen": 1200,
+      "effective_at": "2026-09-25T02:00:00+00:00",
+      "fact_id": "f1",
+      "match_status": "matched",
+      "point_in_time": "2026-08-31T16:00:00+00:00",
+      "reason": null,
+      "store_key": "s1",
+      "surrogate_key": "v1|2026-08-31T16:00:00+00:00|reading|s1",
+      "venue_key": "v1",
+      "zone_type": "reading"
+    },
+    {
+      "amount_fen": 300,
+      "effective_at": "2026-09-25T02:00:00+00:00",
+      "fact_id": "f2",
+      "match_status": "unknown",
+      "point_in_time": "2026-08-31T16:00:00+00:00",
+      "reason": "missing_venue",
+      "store_key": null,
+      "surrogate_key": null,
+      "venue_key": "missing",
+      "zone_type": null
+    },
+    {
+      "amount_fen": 1200,
+      "effective_at": "2026-09-25T02:00:00+00:00",
+      "fact_id": "f1",
+      "match_status": "matched",
+      "point_in_time": "2026-10-04T16:00:00+00:00",
+      "reason": null,
+      "store_key": "s2",
+      "surrogate_key": "v1|2026-09-19T16:00:00+00:00|dining|s2",
+      "venue_key": "v1",
+      "zone_type": "dining"
+    },
+    {
+      "amount_fen": 300,
+      "effective_at": "2026-09-25T02:00:00+00:00",
+      "fact_id": "f2",
+      "match_status": "unknown",
+      "point_in_time": "2026-10-04T16:00:00+00:00",
+      "reason": "missing_venue",
+      "store_key": null,
+      "surrogate_key": null,
+      "venue_key": "missing",
+      "zone_type": null
+    },
+    {
+      "amount_fen": 1200,
+      "effective_at": "2026-09-25T02:00:00+00:00",
+      "fact_id": "f1",
+      "match_status": "matched",
+      "point_in_time": "2026-10-09T16:00:00+00:00",
+      "reason": null,
+      "store_key": "s1",
+      "surrogate_key": "v1|2026-08-31T16:00:00+00:00|reading|s1",
+      "venue_key": "v1",
+      "zone_type": "reading"
+    },
+    {
+      "amount_fen": 300,
+      "effective_at": "2026-09-25T02:00:00+00:00",
+      "fact_id": "f2",
+      "match_status": "unknown",
+      "point_in_time": "2026-10-09T16:00:00+00:00",
+      "reason": "missing_venue",
+      "store_key": null,
+      "surrogate_key": null,
+      "venue_key": "missing",
+      "zone_type": null
+    }
+  ],
+  "unknown_count": 3,
+  "versions": [
+    {
+      "known_at": "2026-08-31T16:00:00+00:00",
+      "point_in_time": "2026-08-31T16:00:00+00:00",
+      "source_assertion_id": "a1",
+      "source_revision": 1,
+      "store_key": "s1",
+      "surrogate_key": "v1|2026-08-31T16:00:00+00:00|reading|s1",
+      "valid_from": "2026-08-31T16:00:00+00:00",
+      "valid_to": "",
+      "venue_key": "v1",
+      "zone_type": "reading"
+    },
+    {
+      "known_at": "2026-10-04T16:00:00+00:00",
+      "point_in_time": "2026-10-04T16:00:00+00:00",
+      "source_assertion_id": "a1",
+      "source_revision": 1,
+      "store_key": "s1",
+      "surrogate_key": "v1|2026-08-31T16:00:00+00:00|reading|s1",
+      "valid_from": "2026-08-31T16:00:00+00:00",
+      "valid_to": "2026-09-19T16:00:00+00:00",
+      "venue_key": "v1",
+      "zone_type": "reading"
+    },
+    {
+      "known_at": "2026-10-04T16:00:00+00:00",
+      "point_in_time": "2026-10-04T16:00:00+00:00",
+      "source_assertion_id": "a2",
+      "source_revision": 2,
+      "store_key": "s2",
+      "surrogate_key": "v1|2026-09-19T16:00:00+00:00|dining|s2",
+      "valid_from": "2026-09-19T16:00:00+00:00",
+      "valid_to": "",
+      "venue_key": "v1",
+      "zone_type": "dining"
+    },
+    {
+      "known_at": "2026-10-09T16:00:00+00:00",
+      "point_in_time": "2026-10-09T16:00:00+00:00",
+      "source_assertion_id": "a1",
+      "source_revision": 1,
+      "store_key": "s1",
+      "surrogate_key": "v1|2026-08-31T16:00:00+00:00|reading|s1",
+      "valid_from": "2026-08-31T16:00:00+00:00",
+      "valid_to": "",
+      "venue_key": "v1",
+      "zone_type": "reading"
+    }
+  ]
+}
